@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Nexus | App Downloads</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for the 'Inter' font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Define a custom glassmorphism class */
+        .glass-card {
+            background-color: rgba(255, 255, 255, 0.05); /* Slightly transparent background */
+            backdrop-filter: blur(10px); /* The key to the effect */
+            -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+        }
+        /* Style for the custom glow on cards */
+        .glow-effect {
+            box-shadow: 0 0 15px rgba(139, 92, 246, 0.4); /* Blue-purple glow */
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 25px rgba(139, 92, 246, 0.8), 0 0 50px rgba(139, 92, 246, 0.5); /* Stronger glow on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 font-inter min-h-screen p-4 md:p-8">
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Header: The flex-col on small screens ensures elements stack vertically -->
+        <header class="flex flex-col md:flex-row items-center justify-between py-6 mb-10 border-b border-gray-800">
+            <div class="flex items-center space-x-4">
+                <!-- App Store Icon -->
+                <svg class="w-10 h-10 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                </svg>
+                <!-- Title font size adjusts for mobile (text-2xl) and desktop (md:text-4xl) -->
+                <h1 class="text-2xl md:text-4xl font-bold text-gray-50">Quantum Nexus</h1>
+            </div>
+            <!-- Navigation links also stack on mobile with mt-4 -->
+            <nav class="mt-4 md:mt-0 space-x-4 md:space-x-6 text-sm md:text-base">
+                <a href="#" class="text-gray-300 hover:text-purple-400 transition-colors duration-200">Home</a>
+                <a href="#" class="text-gray-300 hover:text-purple-400 transition-colors duration-200">Apps</a>
+                <a href="#" class="text-gray-300 hover:text-purple-400 transition-colors duration-200">Games</a>
+                <a href="#" class="text-gray-300 hover:text-purple-400 transition-colors duration-200">Updates</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="text-center mb-16">
+            <!-- Font size scales from a comfortable mobile size (text-3xl) up to desktop (md:text-6xl) -->
+            <h2 class="text-3xl md:text-6xl font-extrabold text-white leading-tight mb-4">Discover Your Next Favorite App</h2>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">Explore a curated collection of innovative applications and tools designed for the future.</p>
+        </section>
+
+        <!-- App Grid Section -->
+        <section>
+            <!-- The grid automatically switches to a single column on small screens (grid-cols-1) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                
+                <!-- App Card 1: Nebula Finance -->
+                <div class="glass-card rounded-3xl p-6 md:p-8 border border-gray-800 transition-transform duration-300 ease-in-out hover:scale-105 glow-effect">
+                    <div class="flex items-center mb-4">
+                        <!-- App Icon (SVG) -->
+                        <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-50">Nebula Finance</h3>
+                    </div>
+                    <p class="text-gray-300 mb-6">Manage your finances with predictive AI, real-time analytics, and secure transactions. Your financial future starts here.</p>
+                    <!-- The button uses w-full to ensure it takes up the full width on all devices -->
+                    <a href="#" class="inline-block w-full text-center py-3 px-6 bg-purple-600 rounded-full text-white font-semibold hover:bg-purple-700 transition-colors duration-300 transform hover:scale-105 active:scale-95">Download Now</a>
+                </div>
+                
+                <!-- App Card 2: Astro Explorer -->
+                <div class="glass-card rounded-3xl p-6 md:p-8 border border-gray-800 transition-transform duration-300 ease-in-out hover:scale-105 glow-effect">
+                    <div class="flex items-center mb-4">
+                        <!-- App Icon (SVG) -->
+                        <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2a10 10 0 1010 10A10.01 10.01 0 0012 2zm-1 15h2v-2h-2zm0-4h2V7h-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-50">Astro Explorer</h3>
+                    </div>
+                    <p class="text-gray-300 mb-6">A virtual reality portal to the cosmos. Explore galaxies, planets, and nebulae from the comfort of your home.</p>
+                    <a href="#" class="inline-block w-full text-center py-3 px-6 bg-blue-600 rounded-full text-white font-semibold hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105 active:scale-95">Download Now</a>
+                </div>
+
+                <!-- App Card 3: CyberChat -->
+                <div class="glass-card rounded-3xl p-6 md:p-8 border border-gray-800 transition-transform duration-300 ease-in-out hover:scale-105 glow-effect">
+                    <div class="flex items-center mb-4">
+                        <!-- App Icon (SVG) -->
+                        <div class="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-50">CyberChat</h3>
+                    </div>
+                    <p class="text-gray-300 mb-6">A secure, end-to-end encrypted messaging platform with advanced holographic avatars and real-time translation.</p>
+                    <a href="#" class="inline-block w-full text-center py-3 px-6 bg-green-600 rounded-full text-white font-semibold hover:bg-green-700 transition-colors duration-300 transform hover:scale-105 active:scale-95">Download Now</a>
+                </div>
+                
+                <!-- App Card 4: DataFlow Pro -->
+                <div class="glass-card rounded-3xl p-6 md:p-8 border border-gray-800 transition-transform duration-300 ease-in-out hover:scale-105 glow-effect">
+                    <div class="flex items-center mb-4">
+                        <!-- App Icon (SVG) -->
+                        <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm-1 16c-3.86 0-7-3.14-7-7h14c0 3.86-3.14 7-7 7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-50">DataFlow Pro</h3>
+                    </div>
+                    <p class="text-gray-300 mb-6">Visualize complex datasets with a powerful, intuitive interface. Transform raw data into actionable insights instantly.</p>
+                    <a href="#" class="inline-block w-full text-center py-3 px-6 bg-red-600 rounded-full text-white font-semibold hover:bg-red-700 transition-colors duration-300 transform hover:scale-105 active:scale-95">Download Now</a>
+                </div>
+                
+                <!-- App Card 5: AI Composer -->
+                <div class="glass-card rounded-3xl p-6 md:p-8 border border-gray-800 transition-transform duration-300 ease-in-out hover:scale-105 glow-effect">
+                    <div class="flex items-center mb-4">
+                        <!-- App Icon (SVG) -->
+                        <div class="w-16 h-16 bg-yellow-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm-1 16c-3.86 0-7-3.14-7-7h14c0 3.86-3.14 7-7 7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-50">AI Composer</h3>
+                    </div>
+                    <p class="text-gray-300 mb-6">Let artificial intelligence compose original music for your projects. Choose from a variety of genres and moods.</p>
+                    <a href="#" class="inline-block w-full text-center py-3 px-6 bg-yellow-600 rounded-full text-white font-semibold hover:bg-yellow-700 transition-colors duration-300 transform hover:scale-105 active:scale-95">Download Now</a>
+                </div>
+                
+                <!-- App Card 6: HealthPulse -->
+                <div class="glass-card rounded-3xl p-6 md:p-8 border border-gray-800 transition-transform duration-300 ease-in-out hover:scale-105 glow-effect">
+                    <div class="flex items-center mb-4">
+                        <!-- App Icon (SVG) -->
+                        <div class="w-16 h-16 bg-pink-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm-1 16c-3.86 0-7-3.14-7-7h14c0 3.86-3.14 7-7 7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-50">HealthPulse</h3>
+                    </div>
+                    <p class="text-gray-300 mb-6">Monitor your vital signs in real-time with our biometric sensor integration. Receive personalized health recommendations.</p>
+                    <a href="#" class="inline-block w-full text-center py-3 px-6 bg-pink-600 rounded-full text-white font-semibold hover:bg-pink-700 transition-colors duration-300 transform hover:scale-105 active:scale-95">Download Now</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-16 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Quantum Nexus. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
